@@ -1,0 +1,22 @@
+.Footer {
+  @include section(var(--theme-background), var(--theme-primary));
+  display: flex;
+  flex-direction: column;
+  &__networks {
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5rem;
+    .Network {
+      &__link {
+        color: var(--theme-primary);
+        font-size: 1.5rem;
+      }
+    }
+  }
+  &__copyright {
+    align-self: center;
+    font-weight: 200;
+    letter-spacing: 1.1px;
+    font-size: 0.875rem;
+  }
+}

@@ -1,8 +1,7 @@
 .About {
   display: flex;
   flex-direction: column;
-  padding-top: 3rem;
-  padding-bottom: 5rem;
+  @include section(var(--theme-background), var(--theme-on-surface));
   &__content {
     display: flex;
     flex-direction: column;
@@ -24,7 +23,7 @@
       font-size: 1.25rem;
       margin: 0 0 1rem;
       &:last-of-type {
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
       }
     }
     &__resume {

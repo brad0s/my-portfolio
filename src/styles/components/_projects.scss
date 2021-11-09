@@ -1,0 +1,70 @@
+.Projects {
+  @include section(var(--theme-surface), var(--theme-on-surface));
+  &__title {
+    text-align: center;
+    margin: 0 2rem;
+  }
+  &__content {
+  }
+}
+
+.Project {
+  padding: 3rem 0;
+  &__info {
+    display: flex;
+    flex-direction: column;
+    &__title {
+      margin: 0 0 1rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+      &--subtitle {
+        color: var(--theme-secondary);
+      }
+    }
+    &__description {
+      margin: 0 0 1rem;
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+      font-weight: 300;
+    }
+    &__tags {
+      margin: 0 0 1.5rem;
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      font-size: 0.875rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      font-weight: 600;
+      &__item {
+        &:not(:first-child):before {
+          content: '•';
+          color: var(--theme-secondary);
+          margin: 0 0.75rem;
+          font-weight: 900;
+        }
+      }
+    }
+    &__links {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.5rem;
+      &__link {
+        @include button();
+        font-weight: 500;
+        margin: 0 0 1rem;
+        font-size: 1.25rem;
+        &--primary {
+          background-color: var(--theme-primary);
+          color: var(--theme-on-primary);
+          border-color: var(--theme-primary);
+        }
+        &--default {
+          border-color: var(--theme-primary);
+          color: var(--theme-primary);
+        }
+      }
+    }
+  }
+}

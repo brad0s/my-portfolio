@@ -61,3 +61,15 @@
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
+@mixin background-opacity($color, $opacity: 0.3) {
+  background: $color;
+  background: rgba($color, $opacity);
+}
+
+@mixin section($background-color, $color) {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: $background-color;
+  color: $color;
+}

@@ -3,15 +3,22 @@ import React from 'react';
 import { heroData } from '../../data/data';
 
 function Hero() {
-  const { title, title2, titleAccent, cta } = heroData;
+  const { header, cta } = heroData;
   return (
     <section className="Hero">
       <div className="Hero__content">
         <h1 className="Hero__content__title">
-          {title}
+          {header.title}
+          <span className="Hero__content__title--underline">
+            {header.titleAccent}
+          </span>
+          .
           <br />
-          {title2}{' '}
-          <span className="Hero__content__title--accent">{titleAccent}</span>
+          {header.subTitle}{' '}
+          <span className="Hero__content__title--accent">
+            {header.subTitleAccent}
+          </span>
+          .
         </h1>
         <button className="Hero__content__button">{cta}</button>
       </div>
