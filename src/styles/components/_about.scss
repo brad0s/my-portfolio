@@ -1,0 +1,38 @@
+.About {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    &__title {
+      margin: 0 0 2rem;
+      font-size: 1.5rem;
+    }
+    &__pic {
+      width: 288px;
+      align-self: center;
+    }
+  }
+  &__bio {
+    display: flex;
+    flex-direction: column;
+    &__text {
+      line-height: 1.25;
+      font-size: 1.25rem;
+      margin: 0 0 1rem;
+      &:last-of-type {
+        margin-bottom: 2rem;
+      }
+    }
+    &__resume {
+      @include button;
+      color: var(--theme-primary);
+      border-color: var(--theme-primary);
+      align-self: center;
+      width: 50%;
+    }
+  }
+}

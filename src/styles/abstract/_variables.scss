@@ -1,0 +1,43 @@
+// css variables
+$--theme-primary: --theme-primary;
+$--theme-secondary: --theme-secondary;
+$--theme-surface: --theme-surface;
+$--theme-background: --theme-background;
+$--theme-on-primary: --theme-on-primary;
+$--theme-on-secondary: --theme-on-secondary;
+$--theme-on-surface: --theme-on-surface;
+
+$--theme-gray-100: --theme-gray-100;
+$--theme-gray-200: --theme-gray-200;
+$--theme-gray-300: --theme-gray-300;
+$--theme-gray-400: --theme-gray-400;
+
+// default theme
+$theme-map-dark: (
+  $--theme-primary: #bb86fc,
+  $--theme-secondary: #03dac5,
+  $--theme-surface: #2f2b2b,
+  $--theme-background: #1b1919,
+  $--theme-on-primary: #443e42,
+  $--theme-on-secondary: #121212,
+  $--theme-on-surface: #f5f1f1,
+  $--theme-gray-100: rgba(255, 255, 255, 0.9),
+  $--theme-gray-200: rgba(255, 255, 255, 0.7),
+  $--theme-gray-300: rgba(255, 255, 255, 0.4),
+  $--theme-gray-400: rgba(255, 255, 255, 0.1),
+);
+
+// override default theme
+$theme-map-light: (
+  $--theme-primary: darken(#bb86fc, 20%),
+  $--theme-secondary: darken(#03dac5, 20%),
+  $--theme-surface: #fff,
+  $--theme-background: #fafafa,
+  $--theme-on-primary: #fff,
+  $--theme-on-secondary: #fff,
+  $--theme-on-surface: #000,
+  $--theme-gray-100: #1c1c1c,
+  $--theme-gray-200: #585757,
+  $--theme-gray-300: #969696,
+  $--theme-gray-400: #e8e8e8,
+);
