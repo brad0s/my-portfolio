@@ -1,0 +1,30 @@
+.Nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 0.5rem;
+  display: flex;
+  &__brand {
+    &__logo {
+    }
+  }
+
+  &__toggler {
+    &__icon {
+    }
+  }
+
+  &__navbar {
+    &__list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+
+      &__item {
+        &__link {
+        }
+      }
+    }
+  }
+}

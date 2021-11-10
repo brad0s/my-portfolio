@@ -95,7 +95,7 @@ export const experienceData = [
     id: nanoid(),
     company: `Martindale-Nolo`,
     location: `Pleasanton, CA`,
-    jobTitle: `Frontend Dev Intern`,
+    jobTitle: `Frontend Developer Intern`,
     dates: { start: `Oct 2019`, end: `Feb 2020` },
     info: [
       {
