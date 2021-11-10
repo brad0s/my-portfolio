@@ -63,6 +63,7 @@
       align-items: flex-end;
       @include breakpoint('sm-desktop') {
         flex-direction: row;
+        column-gap: 0.5rem;
       }
 
       &__item {
@@ -71,8 +72,14 @@
           color: var(--theme-on-surface);
           text-decoration: none;
           padding: 0.5rem;
-          &--active {
+          border-bottom: 1px solid transparent;
+          &:hover,
+          &:focus {
             border-bottom: 1px solid var(--theme-primary);
+          }
+          &--active {
+            border-bottom: 2px solid var(--theme-primary) !important;
+            font-weight: 600;
           }
         }
       }

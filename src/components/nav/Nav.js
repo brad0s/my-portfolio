@@ -73,7 +73,7 @@ function Nav() {
                   }
                   href={`#${url}`}
                   onClick={() => {
-                    setActive(id);
+                    // setActive(id);
                     setExpanded(false);
                   }}
                 >
