@@ -9,6 +9,7 @@
     &__title {
       margin: 0 0 2rem;
       font-size: 1.5rem;
+      text-align: center;
     }
     &__pic {
       width: 288px;
@@ -18,6 +19,9 @@
   &__bio {
     display: flex;
     flex-direction: column;
+    @include breakpoint('tablet') {
+      width: 60ch;
+    }
     &__text {
       line-height: 1.25;
       font-size: 1.25rem;
@@ -28,10 +32,12 @@
     }
     &__resume {
       @include button;
-      color: var(--theme-primary);
+      background-color: var(--theme-primary);
+      color: var(--theme-on-secondary);
       border-color: var(--theme-primary);
       align-self: center;
-      width: 50%;
+      width: 25%;
+      font-weight: 600;
     }
   }
 }

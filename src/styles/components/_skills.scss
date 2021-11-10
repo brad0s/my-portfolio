@@ -5,6 +5,12 @@
     rgba(210, 175, 253, 1) 40%,
     rgba(132, 36, 249, 1) 100%
   );
+  > .container {
+    @include breakpoint('tablet') {
+      // max-width: 500px;
+      max-width: 60ch;
+    }
+  }
   &__title {
     margin: 0 0 2rem;
     font-size: 1.5rem;
@@ -16,11 +22,19 @@
     flex-wrap: wrap;
     row-gap: 1rem;
     column-gap: 1rem;
+    @include breakpoint('tablet') {
+      row-gap: 1.5rem;
+      column-gap: 1.5rem;
+      justify-content: center;
+    }
   }
 }
 
 .Skill {
   flex-grow: 1;
+  @include breakpoint('tablet') {
+    flex-grow: 0;
+  }
   &__card {
     height: 60px;
     border: 1px solid var(--theme-gray-100);
@@ -36,8 +50,16 @@
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     border: 1px solid rgba(255, 255, 255, 0.18);
     column-gap: 0.25rem;
+    @include breakpoint('tablet') {
+      width: 200px;
+      height: 150px;
+      flex-direction: column;
+    }
     > svg {
       font-size: 1.75rem;
+      @include breakpoint('tablet') {
+        font-size: 3rem;
+      }
     }
     &__name {
       font-size: 1rem;

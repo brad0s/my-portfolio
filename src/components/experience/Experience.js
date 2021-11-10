@@ -27,12 +27,14 @@ const WorkItem = ({ work }) => {
 function Experience() {
   return (
     <section className="Work">
-      <h2 className="Work__title">Experience</h2>
-      <ol className="Work__timeline">
-        {experienceData.map((item) => (
-          <WorkItem work={item} />
-        ))}
-      </ol>
+      <div className="container">
+        <h2 className="Work__title">Experience</h2>
+        <ol className="Work__timeline">
+          {experienceData.map((item) => (
+            <WorkItem work={item} key={item.id} />
+          ))}
+        </ol>
+      </div>
     </section>
   );
 }

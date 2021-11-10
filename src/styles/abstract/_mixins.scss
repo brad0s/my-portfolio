@@ -68,8 +68,6 @@
 }
 
 @mixin section($background-color, $color) {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
   background-color: $background-color;
   color: $color;
 }

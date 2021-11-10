@@ -2,6 +2,10 @@
   @include section(var(--theme-background), var(--theme-primary));
   display: flex;
   flex-direction: column;
+  padding: 4rem;
+  @include breakpoint('tablet') {
+    padding: 5rem;
+  }
   &__networks {
     display: flex;
     justify-content: center;
@@ -9,7 +13,7 @@
     .Network {
       &__link {
         color: var(--theme-primary);
-        font-size: 1.5rem;
+        font-size: 1.75rem;
       }
     }
   }

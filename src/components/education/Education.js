@@ -23,11 +23,13 @@ function Education() {
     <>
       {educationData.length > 0 && (
         <section className="Education">
-          <h2 className="Education__title">Education</h2>
-          <div className="Education__content">
-            {educationData.map((school) => (
-              <School school={school} />
-            ))}
+          <div className="container">
+            <h2 className="Education__title">Education</h2>
+            <div className="Education__content">
+              {educationData.map((school) => (
+                <School school={school} />
+              ))}
+            </div>
           </div>
         </section>
       )}
