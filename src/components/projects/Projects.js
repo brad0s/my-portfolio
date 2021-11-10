@@ -1,6 +1,7 @@
 import React from 'react';
+import { Fade } from 'react-reveal';
 import { useStaticQuery, graphql } from 'gatsby';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import { projectsData } from '../../data/data';
 
 const Project = ({ project }) => {
@@ -35,40 +36,45 @@ const Project = ({ project }) => {
   return (
     <div className="Project">
       <div className="Project__info">
-        <h3 className="Project__info__title">
-          {title}{' '}
-          <span className="Project__info__title--subtitle">{subtitle}</span>
-        </h3>
-        <p className="Project__info__description">{description}</p>
-        <ul className="Project__info__tags">
-          {tags &&
-            tags.map((tag) => (
-              <li className="Project__info__tags__item" key={tag}>
-                {tag}
-              </li>
-            ))}
-        </ul>
-        <div className="Project__info__links">
-          <a
-            className="Project__info__links__link Project__info__links__link--primary"
-            href={url}
-          >
-            View live
-          </a>
-          {repo && (
+        <Fade bottom>
+          <h3 className="Project__info__title">
+            {title}{' '}
+            <span className="Project__info__title--subtitle">{subtitle}</span>
+          </h3>
+          <p className="Project__info__description">{description}</p>
+          <ul className="Project__info__tags">
+            {tags &&
+              tags.map((tag) => (
+                <Fade bottom key={tag}>
+                  <li className="Project__info__tags__item">{tag}</li>
+                </Fade>
+              ))}
+          </ul>
+        </Fade>
+        <Fade bottom>
+          <div className="Project__info__links">
             <a
-              className="Project__info__links__link Project__info__links__link--default"
-              href={repo}
+              className="Project__info__links__link Project__info__links__link--primary"
+              href={url}
             >
-              View code
+              View live
             </a>
-          )}
+            {repo && (
+              <a
+                className="Project__info__links__link Project__info__links__link--default"
+                href={repo}
+              >
+                View code
+              </a>
+            )}
+          </div>
+        </Fade>
+      </div>
+      <Fade bottom>
+        <div className="Project__picture">
+          <GatsbyImage image={imagee} alt={image.alt} />
         </div>
-      </div>
-      <div className="Project__picture">
-        <GatsbyImage image={imagee} alt={image.alt} />
-        {/* <img src="https://via.placeholder.com/393x208.png" alt="" /> */}
-      </div>
+      </Fade>
     </div>
   );
 };
@@ -77,7 +83,9 @@ function Projects() {
   return (
     <section className="Projects">
       <div className="container">
-        <h2 className="Projects__title">Projects</h2>
+        <Fade bottom>
+          <h2 className="Projects__title">Projects</h2>
+        </Fade>
         <div className="Projects__content">
           {projectsData.map((project) => (
             <Project project={project} key={project.id} />
