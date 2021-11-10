@@ -8,6 +8,7 @@ function Nav() {
   const [active, setActive] = useState();
   const [scrollNav, setscrollNav] = useState(false);
   const [sections] = useState(document.getElementsByTagName('section'));
+  const [NAVBAR_OFFSET] = useState(50);
 
   const handleOnBlur = (e) => {
     if (e.relatedTarget != null && !e.relatedTarget.className.includes('Nav')) {
@@ -26,7 +27,7 @@ function Nav() {
 
       Array.from(sections).forEach((section) => {
         const sectionTop = section.offsetTop;
-        if (scroll >= sectionTop - 10) {
+        if (scroll >= sectionTop - NAVBAR_OFFSET) {
           setActive(section.id.toLocaleLowerCase());
         }
       });
