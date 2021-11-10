@@ -73,9 +73,11 @@
           text-decoration: none;
           padding: 0.5rem;
           border-bottom: 1px solid transparent;
+          transition: border-bottom 100ms ease-in-out;
           &:hover,
           &:focus {
             border-bottom: 1px solid var(--theme-primary);
+            transition: all 200ms ease-in-out;
           }
           &--active {
             border-bottom: 2px solid var(--theme-primary) !important;
