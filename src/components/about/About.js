@@ -6,7 +6,7 @@ import { aboutData } from '../../data/data';
 function About() {
   const { title, bio, resume } = aboutData;
   return (
-    <section className="About">
+    <section className="About" id="About">
       <div className="container">
         <div className="About__content">
           <Fade bottom>

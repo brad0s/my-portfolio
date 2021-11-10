@@ -15,7 +15,7 @@ export const Skill = ({ icon, name }) => {
 
 function Skills() {
   return (
-    <section className="Skills">
+    <section className="Skills" id="Skills">
       <div className="container">
         <Fade bottom>
           <h2 className="Skills__title">Skills</h2>

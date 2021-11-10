@@ -4,7 +4,7 @@ import { experienceData } from '../../data/data';
 
 const WorkItem = ({ work }) => {
   const { company, location, jobTitle, dates, info } = work;
-  console.log(info);
+
   return (
     <li className="WorkItem">
       <div className="WorkItem__content">
@@ -23,7 +23,7 @@ const WorkItem = ({ work }) => {
 
 function Experience() {
   return (
-    <section className="Work">
+    <section className="Work" id="Experience">
       <div className="container">
         <Fade bottom>
           <h2 className="Work__title">Experience</h2>

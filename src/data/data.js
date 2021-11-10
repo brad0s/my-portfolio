@@ -1,5 +1,28 @@
 import { nanoid } from 'nanoid';
 
+export const navData = [
+  {
+    id: `about`,
+    url: `About`,
+    text: `About`,
+  },
+  {
+    id: `skills`,
+    url: `Skills`,
+    text: `Skills`,
+  },
+  {
+    id: `projects`,
+    url: `Projects`,
+    text: `Projects`,
+  },
+  {
+    id: `experience`,
+    url: `Experience`,
+    text: `Experience`,
+  },
+];
+
 export const headData = {
   title: `Braden Wright | Frontend Developer`,
   lang: `en`,

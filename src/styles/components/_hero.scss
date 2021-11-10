@@ -39,6 +39,7 @@
       width: 66%;
       backdrop-filter: blur(2px);
       -webkit-backdrop-filter: blur(2px);
+      background: rgba(255, 255, 255, 0.05);
       @include breakpoint('tablet') {
         // width: 33%;
         width: 200px;

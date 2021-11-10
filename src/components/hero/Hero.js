@@ -6,7 +6,11 @@ import { heroData } from '../../data/data';
 function Hero() {
   const { header, cta } = heroData;
   return (
-    <section className="Hero" style={{ backgroundImage: `url(${heroImg})` }}>
+    <section
+      className="Hero"
+      id="Home"
+      style={{ backgroundImage: `url(${heroImg})` }}
+    >
       <div className="container">
         <div className="Hero__content">
           <Fade bottom duration={1000} delay={500}>

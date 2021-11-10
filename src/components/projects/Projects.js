@@ -32,7 +32,7 @@ const Project = ({ project }) => {
     edge.node.relativePath.includes(image.filename)
   );
   const imagee = gatsbyImg.node.childImageSharp.gatsbyImageData;
-  console.log(gatsbyImg.node.childImageSharp.gatsbyImageData);
+
   return (
     <div className="Project">
       <div className="Project__info">
@@ -81,7 +81,7 @@ const Project = ({ project }) => {
 
 function Projects() {
   return (
-    <section className="Projects">
+    <section className="Projects" id="Projects">
       <div className="container">
         <Fade bottom>
           <h2 className="Projects__title">Projects</h2>

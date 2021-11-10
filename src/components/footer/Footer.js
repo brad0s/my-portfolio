@@ -11,7 +11,7 @@ function Footer() {
           const { name, url } = network;
           const iconName = `Fa${name}`;
           const icon = Fa[iconName];
-          console.log(icon);
+
           return (
             <div className="Network" key={name}>
               <a href={url} className="Network__link">

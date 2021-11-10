@@ -5,7 +5,7 @@ import { educationData } from '../../data/data';
 const School = ({ school }) => {
   const { name, location, degree, major, date } = school;
   return (
-    <div className="School">
+    <div className="School" id="Education">
       <Fade bottom>
         <p className="School__name">{name}</p>
         <p className="School__dates">
