@@ -62,15 +62,20 @@
       font-size: 1.25rem;
       border-width: 2px;
       width: 66%;
+      max-width: 200px;
       backdrop-filter: blur(2px);
       -webkit-backdrop-filter: blur(2px);
       background: rgba(255, 255, 255, 0.05);
       overflow: hidden;
       transition: color 1s;
-      @include breakpoint('tablet') {
-        // width: 33%;
-        width: 200px;
+      padding: 0.5rem;
+      @include breakpoint('mobile') {
+        padding: 0.5rem 1rem;
+        @include breakpoint('tablet') {
+          width: 200px;
+        }
       }
+
       &:hover {
         color: var(--theme-on-primary);
         transition: all 1s;
@@ -84,7 +89,7 @@
         content: '';
         position: absolute;
         top: -200%;
-        left: -110%;
+        left: -130%;
         right: 0;
         bottom: 0;
         height: 210px;
@@ -94,6 +99,11 @@
         transform: rotate(0deg);
         z-index: -1;
         transition: all 1.5s;
+        @include breakpoint('mobile') {
+          left: -110%;
+          height: 210px;
+          width: 210px;
+        }
       }
     }
   }
