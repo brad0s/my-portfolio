@@ -9,7 +9,7 @@ const Project = ({ project }) => {
 
   const data = useStaticQuery(graphql`
     {
-      images: allFile {
+      images: allFile(filter: { extension: { nin: ["svg", "js"] } }) {
         edges {
           node {
             relativePath
@@ -19,6 +19,7 @@ const Project = ({ project }) => {
                 layout: CONSTRAINED
                 quality: 90
                 placeholder: BLURRED
+                formats: [AUTO, WEBP, AVIF]
               )
             }
           }
