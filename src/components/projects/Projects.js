@@ -19,7 +19,6 @@ const Project = ({ project }) => {
                 layout: CONSTRAINED
                 quality: 90
                 placeholder: BLURRED
-                formats: [WEBP, AVIF]
               )
             }
           }
