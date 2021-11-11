@@ -105,15 +105,6 @@ export const experienceData = [
     location: `Laie, HI`,
     jobTitle: `Developer`,
     dates: { start: `Feb 2020`, end: `Feb 2021` },
-    info: [
-      { point: `Created websites based on business needs using our CMS.` },
-      {
-        point: `Developed and pioneered new technology for creating websites and apps to increase productivity.`,
-      },
-      {
-        point: `Integrated old systems with new ones to increase usability and security`,
-      },
-    ],
   },
   {
     id: nanoid(),
@@ -121,17 +112,6 @@ export const experienceData = [
     location: `Pleasanton, CA`,
     jobTitle: `Frontend Developer Intern`,
     dates: { start: `Oct 2019`, end: `Feb 2020` },
-    info: [
-      {
-        point: `Created responsive, mobile-first web applications using HTML5, CSS3, and JS following design specs.`,
-      },
-      {
-        point: `Developed pixel-perfect designs and deployed projects to generate leads and boost sales.`,
-      },
-      {
-        point: `Used Agile methodology to collaborate with teams on multiple projects and deliver projects on deadlines.`,
-      },
-    ],
   },
   {
     id: nanoid(),
@@ -139,20 +119,6 @@ export const experienceData = [
     location: `Laie, HI `,
     jobTitle: `Student Developer`,
     dates: { start: `Dec 2016`, end: `Jun 2019` },
-    info: [
-      {
-        point: `Created a full-stack Java application using Spring MVC architecture for web development and utilized the CRUD design pattern.`,
-      },
-      {
-        point: `The application managed 3,500+ students’ tests for every class each semester.`,
-      },
-      {
-        point: `Automated tasks and generated custom reports to improve productivity.`,
-      },
-      {
-        point: `Worked closely with stakeholders for the needs and designs and executed those plans.`,
-      },
-    ],
   },
   {
     id: nanoid(),
@@ -160,17 +126,6 @@ export const experienceData = [
     location: `Palo Alto, CA`,
     jobTitle: `Software Developer Intern`,
     dates: { start: `Jun 2017`, end: `Aug 2017` },
-    info: [
-      {
-        point: `Utilized Bootstrap, JavaScript and Angular.js to create the application from scratch and finished within 3 months.`,
-      },
-      {
-        point: `Majority of duties included front-end development and Quality Assurance testing.`,
-      },
-      {
-        point: `Optimize and improve front-end performance by optimizing files.`,
-      },
-    ],
   },
 ];
 

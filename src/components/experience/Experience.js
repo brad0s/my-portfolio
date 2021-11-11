@@ -3,7 +3,7 @@ import { Fade } from 'react-reveal';
 import { experienceData } from '../../data/data';
 
 const WorkItem = ({ work }) => {
-  const { company, location, jobTitle, dates, info } = work;
+  const { company, location, jobTitle, dates } = work;
 
   return (
     <li className="WorkItem">

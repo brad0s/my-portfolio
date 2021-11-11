@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import company from '../../images/bw-logo-white.svg';
-import { IoMdMenu, IoMdClose } from 'react-icons/io';
 
 import { navData } from '../../data/data';
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Fade from 'react-reveal';
 import heroImg from '../../images/top.svg';
 import { heroData } from '../../data/data';
