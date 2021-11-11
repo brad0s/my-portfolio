@@ -7,7 +7,7 @@ function Nav() {
   const [expanded, setExpanded] = useState(false);
   const [active, setActive] = useState();
   const [scrollNav, setscrollNav] = useState(false);
-  const [sections] = useState(document.getElementsByTagName('section'));
+  // const [sections] = useState(navData);
   const [NAVBAR_OFFSET] = useState(50);
 
   const handleOnBlur = (e) => {
@@ -25,10 +25,11 @@ function Nav() {
         setscrollNav(false);
       }
 
-      Array.from(sections).forEach((section) => {
+      navData.forEach((item) => {
+        const section = document.getElementById(item.url);
         const sectionTop = section.offsetTop;
         if (scroll >= sectionTop - NAVBAR_OFFSET) {
-          setActive(section.id.toLocaleLowerCase());
+          setActive(item.id);
         }
       });
     };
