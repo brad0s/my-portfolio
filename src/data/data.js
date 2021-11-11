@@ -93,8 +93,8 @@ export const projectsData = [
       filename: `skopify.png`,
       alt: 'Ecommerce Landing page screenshot',
     },
-    repo: `https://github.com/brad0s/landers/tree/main/src/components/shopify`,
-    url: ``,
+    repo: `https://github.com/brad0s/skopify-lander`,
+    url: `https://elegant-perlman-a14ab1.netlify.app/`,
   },
 ];
 
