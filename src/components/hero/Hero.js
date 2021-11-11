@@ -30,7 +30,9 @@ function Hero() {
             </h1>
           </Fade>
           <Fade bottom duration={1000} delay={1000}>
-            <button className="Hero__content__button">{cta}</button>
+            <a href="#About" className="Hero__content__button">
+              {cta}
+            </a>
           </Fade>
         </div>
       </div>
