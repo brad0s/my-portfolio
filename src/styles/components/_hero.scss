@@ -54,6 +54,7 @@
       }
     }
     &__button {
+      position: relative;
       @include button();
       border-color: var(--theme-primary);
       color: var(--theme-primary);
@@ -64,9 +65,37 @@
       backdrop-filter: blur(2px);
       -webkit-backdrop-filter: blur(2px);
       background: rgba(255, 255, 255, 0.05);
+      overflow: hidden;
+      transition: color 1s;
       @include breakpoint('tablet') {
         // width: 33%;
         width: 200px;
+      }
+      &:hover {
+        color: var(--theme-on-primary);
+        // background-color: var(--theme-primary);
+        transition: all 1s;
+        &:before {
+          left: -10px;
+          transform: rotate(180deg);
+          // animation-direction: alternate;
+          transition: all 1.5s;
+        }
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        top: -200%;
+        left: -110%;
+        right: 0;
+        bottom: 0;
+        height: 210px;
+        width: 210px;
+        border-radius: 35%;
+        background-color: var(--theme-primary);
+        transform: rotate(0deg);
+        z-index: -1;
+        transition: all 1.5s;
       }
     }
   }

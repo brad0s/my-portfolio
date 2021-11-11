@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Fade from 'react-reveal';
 import heroImg from '../../images/top.svg';
 import { heroData } from '../../data/data';
 
 function Hero() {
   const { header, cta } = heroData;
+
   return (
     <section
       className="Hero"
