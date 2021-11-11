@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import company from '../../images/bw-logo-white.svg';
-import { IoMdMenu } from 'react-icons/io';
+import { IoMdMenu, IoMdClose } from 'react-icons/io';
+
 import { navData } from '../../data/data';
 
 function Nav() {
@@ -40,20 +41,26 @@ function Nav() {
   return (
     <nav className={scrollNav ? 'Nav Nav--scroll' : 'Nav'}>
       <a href="#Home" className="Nav__brand">
-        <img
-          className="Nav__brand__logo"
-          src={company}
-          alt="Personal logo"
-          width="30px"
-          height="30px"
-        />
+        <img className="Nav__brand__logo" src={company} alt="Personal logo" />
       </a>
       <button
         className="Nav__toggler"
         onClick={() => setExpanded(!expanded)}
         onBlur={(e) => handleOnBlur(e)}
       >
-        <IoMdMenu className="Nav__toggler__icon" />
+        <div
+          className={
+            expanded
+              ? 'Nav__toggler__icon Nav__toggler__icon--expanded'
+              : 'Nav__toggler__icon'
+          }
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </button>
       <div
         className={
@@ -73,7 +80,6 @@ function Nav() {
                   }
                   href={`#${url}`}
                   onClick={() => {
-                    // setActive(id);
                     setExpanded(false);
                   }}
                 >
