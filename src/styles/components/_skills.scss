@@ -37,7 +37,7 @@
   }
   &__card {
     height: 60px;
-    width: 150px;
+    width: 130px;
     border: 1px solid var(--theme-gray-100);
     border-radius: 4px;
     padding: 1rem;
@@ -51,11 +51,20 @@
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     border: 1px solid rgba(255, 255, 255, 0.18);
     column-gap: 0.25rem;
-    @include breakpoint('tablet') {
-      width: 200px;
-      height: 150px;
-      flex-direction: column;
+    @include breakpoint('mobile') {
+      height: 60px;
+      width: 150px;
+      @include breakpoint('lg-mobile') {
+        width: 240px;
+        height: 80px;
+        @include breakpoint('tablet') {
+          width: 200px;
+          height: 150px;
+          flex-direction: column;
+        }
+      }
     }
+
     > svg {
       font-size: 1.75rem;
       @include breakpoint('tablet') {
