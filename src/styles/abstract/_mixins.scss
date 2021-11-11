@@ -18,6 +18,11 @@
       @content;
     }
   }
+  @if $breakpoint == lg-mobile {
+    @media (min-width: 576px) {
+      @content;
+    }
+  }
   // tablet
   @if $breakpoint == tablet {
     @media (min-width: 768px) {
