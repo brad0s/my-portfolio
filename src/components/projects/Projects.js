@@ -58,6 +58,7 @@ const Project = ({ project }) => {
               target="_blank"
               rel="noreferrer"
               href={url}
+              aria-label={`View the live site for this project`}
             >
               View live
             </a>
@@ -67,6 +68,7 @@ const Project = ({ project }) => {
                 target="_blank"
                 rel="noreferrer"
                 href={repo}
+                aria-label={`View code for project`}
               >
                 View code
               </a>
@@ -76,7 +78,13 @@ const Project = ({ project }) => {
       </div>
       <Fade bottom>
         <div className="Project__picture">
-          <a className="" target="_blank" rel="noreferrer" href={url}>
+          <a
+            className=""
+            target="_blank"
+            rel="noreferrer"
+            href={url}
+            aria-label={`Link to portfolio project`}
+          >
             <GatsbyImage image={imagee} alt={image.alt} />
           </a>
         </div>

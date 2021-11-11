@@ -39,13 +39,16 @@ function Nav() {
 
   return (
     <nav className={scrollNav ? 'Nav Nav--scroll' : 'Nav'}>
-      <a href="#Home" className="Nav__brand">
+      <a href="#Home" className="Nav__brand" aria-label="Go to Home section">
         <img className="Nav__brand__logo" src={company} alt="Personal logo" />
       </a>
       <button
         className="Nav__toggler"
         onClick={() => setExpanded(!expanded)}
         onBlur={(e) => handleOnBlur(e)}
+        aria-label="Expand navigation"
+        aria-controls="Nav__navbar"
+        aria-expanded={expanded}
       >
         <div
           className={
@@ -62,6 +65,7 @@ function Nav() {
         </div>
       </button>
       <div
+        id="Nav__navbar"
         className={
           expanded ? `Nav__navbar Nav__navbar--expanded` : `Nav__navbar`
         }
@@ -81,6 +85,7 @@ function Nav() {
                   onClick={() => {
                     setExpanded(false);
                   }}
+                  aria-label={`Go to ${text} section`}
                 >
                   {text}
                 </a>

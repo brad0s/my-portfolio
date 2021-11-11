@@ -11,10 +11,13 @@ function Footer() {
           const { name, url } = network;
           const iconName = `Fa${name}`;
           const icon = Fa[iconName];
-
           return (
             <div className="Network" key={name}>
-              <a href={url} className="Network__link">
+              <a
+                href={url}
+                className="Network__link"
+                aria-label={`Link to ${name}`}
+              >
                 {React.createElement(icon) || <Fa.FaShareAltSquare />}
               </a>
             </div>

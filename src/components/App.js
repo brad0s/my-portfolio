@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import About from './about/About';
 import Experience from './experience/Experience';
 import Hero from './hero/Hero';
@@ -9,7 +9,6 @@ import Footer from './footer/Footer';
 import Nav from './nav/Nav';
 
 function App() {
-  const htmlTag = document.getRootNode();
   return (
     <>
       <Nav />
