@@ -18,11 +18,35 @@
 
     &__title {
       font-size: 2rem;
+      @include breakpoint('sm-desktop') {
+        font-size: 3.5rem;
+      }
       margin: 0 0 5rem;
       font-weight: 800;
       &--underline {
-        text-decoration: underline;
-        text-decoration-color: var(--theme-secondary);
+        position: relative;
+        display: inline-block;
+        // text-decoration: underline;
+        // text-decoration-color: var(--theme-secondary);
+        &:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          height: 4px;
+          background-color: var(--theme-secondary);
+          z-index: -1;
+          width: 0px;
+          border-radius: 4px;
+          animation-duration: 1.5s;
+          animation-timing-function: ease-in-out;
+          animation-delay: 1s;
+          animation-iteration-count: initial;
+          animation-direction: normal;
+          animation-fill-mode: forwards;
+          animation-name: underlineLtr;
+        }
       }
       &--accent {
         color: var(--theme-primary);
@@ -45,5 +69,11 @@
         width: 200px;
       }
     }
+  }
+}
+
+@keyframes underlineLtr {
+  to {
+    width: 100%;
   }
 }
