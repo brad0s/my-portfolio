@@ -4,7 +4,7 @@ import profile from '../../images/profile-circle.svg';
 import { aboutData } from '../../data/data';
 
 function About() {
-  const { title, bio, resume } = aboutData;
+  const { title, bio, resume, blog } = aboutData;
   return (
     <section className="About" id="About">
       <div className="container">
@@ -25,9 +25,28 @@ function About() {
             </Fade>
           ))}
           <Fade bottom>
-            <a className="About__bio__resume" href={resume}>
-              Resume
-            </a>
+            <div className="About__bio__btn-group">
+              {resume && (
+                <a
+                  className="About__bio__btn-group__link"
+                  target="_blank"
+                  rel="noreferrer"
+                  href={resume}
+                >
+                  View my resume
+                </a>
+              )}
+              {blog && (
+                <a
+                  className="About__bio__btn-group__link"
+                  target="_blank"
+                  rel="noreferrer"
+                  href={blog}
+                >
+                  Read a blog
+                </a>
+              )}
+            </div>
           </Fade>
         </div>
       </div>

@@ -44,11 +44,11 @@ export const aboutData = {
   bio: [
     {
       id: nanoid(),
-      paragraph: `I am an enthusiastic junior developer who has years of experience developing on the frontend. I enjoy working with javascript and javascript frontend frameworks like react. I have worked with java and php on the backend and used frameworks like spring and laravel. Most of my time has been spent at BYU-Hawaii where I worked a lot with CMSs.`,
+      paragraph: `I am a frontend developer that loves making beautiful user interfaces. I enjoy working with javascript and react. I received my B.S. in Computer Science at Brigham Young University - Hawaii.`,
     },
     {
       id: nanoid(),
-      paragraph: `I enjoy learning new things and working with people who like to push each other to become better. I can put my head down and put in the work in order to deliver what is expected of me.`,
+      paragraph: `I love learning and pushing myself to do things that are challenging. I've continued my journey as a developer and share some of my thoughts and experiences on my blog.`,
     },
     {
       id: nanoid(),
@@ -56,6 +56,7 @@ export const aboutData = {
     },
   ],
   resume: `https://docs.google.com/document/d/1JGp1HDxjFUPtvRqjD5t8BuzBNLiFWQBd3irOkpuySWw/preview`,
+  blog: `https://brad0s.github.io/`,
 };
 
 export const projectsData = [
