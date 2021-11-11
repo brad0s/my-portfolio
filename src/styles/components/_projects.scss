@@ -99,7 +99,7 @@
     }
   }
   &__picture {
-    @include breakpoint('tablet') {
+    @include breakpoint('sm-desktop') {
       width: 60%;
     }
     > a {
