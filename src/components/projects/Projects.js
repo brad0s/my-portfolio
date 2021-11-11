@@ -55,6 +55,8 @@ const Project = ({ project }) => {
           <div className="Project__info__links">
             <a
               className="Project__info__links__link Project__info__links__link--primary"
+              target="_blank"
+              rel="noreferrer"
               href={url}
             >
               View live
@@ -62,6 +64,8 @@ const Project = ({ project }) => {
             {repo && (
               <a
                 className="Project__info__links__link Project__info__links__link--default"
+                target="_blank"
+                rel="noreferrer"
                 href={repo}
               >
                 View code
@@ -72,7 +76,9 @@ const Project = ({ project }) => {
       </div>
       <Fade bottom>
         <div className="Project__picture">
-          <GatsbyImage image={imagee} alt={image.alt} />
+          <a className="" target="_blank" rel="noreferrer" href={url}>
+            <GatsbyImage image={imagee} alt={image.alt} />
+          </a>
         </div>
       </Fade>
     </div>
