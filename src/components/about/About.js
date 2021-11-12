@@ -43,7 +43,7 @@ function About() {
                   rel="noreferrer"
                   href={blog}
                 >
-                  Read a blog
+                  Read my blog
                 </a>
               )}
             </div>

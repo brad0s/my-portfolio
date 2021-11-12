@@ -24,9 +24,9 @@ export const navData = [
 ];
 
 export const headData = {
-  title: `Braden Wright | Frontend Developer`,
+  title: `Braden Wright | Front end Developer`,
   lang: `en`,
-  description: `I'm Braden Wright. I am a frontend developer. Welcome to my website!`,
+  description: `I'm Braden Wright. I am a front end developer. Welcome to my website!`,
 };
 
 export const heroData = {
@@ -34,7 +34,7 @@ export const heroData = {
     title: `Hi, I'm `,
     titleAccent: `Braden Wright`,
     subTitle: `I'm a `,
-    subTitleAccent: `frontend developer`,
+    subTitleAccent: `front end developer`,
   },
   cta: `Know more!`,
 };
@@ -44,7 +44,7 @@ export const aboutData = {
   bio: [
     {
       id: nanoid(),
-      paragraph: `I am a frontend developer that loves making beautiful user interfaces. I enjoy working with javascript and react. I received my B.S. in Computer Science at Brigham Young University - Hawaii.`,
+      paragraph: `I am a front end developer that loves making beautiful user interfaces. I received my B.S. in Computer Science at Brigham Young University - Hawaii and I enjoy working with javascript and react.`,
     },
     {
       id: nanoid(),
@@ -74,7 +74,7 @@ export const projectsData = [
     id: nanoid(),
     title: `Landing page.`,
     subtitle: `Pixel-perfect design.`,
-    description: `While working at Martindale-Nolo, one of the projects I helped implement was a new LLC launch path. This was designed to have people use us to create their own LLCs. On this project, I worked with another frontend developer to create the sites with html, less, and js. Our graphic designer handed us the templates and we turned their templates into pixel perfect, mobile first sites.`,
+    description: `While working at Martindale-Nolo, one of the projects I helped implement was a new LLC launch path. This was designed to have people use us to create their own LLCs. On this project, I worked with another front end developer to create the sites with html, less, and js. Our graphic designer handed us the templates and we turned their templates into pixel perfect, mobile first sites.`,
     tags: [`js`, `less`, `php`],
     image: {
       filename: `llc.png`,
@@ -110,7 +110,7 @@ export const experienceData = [
     id: nanoid(),
     company: `Martindale-Nolo`,
     location: `Pleasanton, CA`,
-    jobTitle: `Frontend Developer Intern`,
+    jobTitle: `Front End Developer Intern`,
     dates: { start: `Oct 2019`, end: `Feb 2020` },
   },
   {
