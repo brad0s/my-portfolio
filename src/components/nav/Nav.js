@@ -51,6 +51,7 @@ function Nav() {
         setscrollNav(true);
       } else {
         setscrollNav(false);
+        setActive('home');
       }
 
       navData.forEach((item) => {
