@@ -2,8 +2,8 @@
   @include section(rgb(187, 134, 252), var(--theme-on-primary));
   background: linear-gradient(
     135deg,
-    rgba(210, 175, 253, 1) 40%,
-    rgba(132, 36, 249, 1) 100%
+    var(--theme-gradient-from) 30%,
+    var(--theme-gradient-to) 85%
   );
   > .container {
     @include breakpoint('tablet') {

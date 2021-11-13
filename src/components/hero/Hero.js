@@ -1,16 +1,23 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Fade from 'react-reveal';
-import heroImg from '../../images/top.svg';
+import { ThemeContext } from '../../context/ThemeContext';
+import heroImageDark from '../../images/top.svg';
+import heroImageLight from '../../images/top-light.svg';
 import { heroData } from '../../data/data';
 
 function Hero() {
   const { header, cta } = heroData;
+  const { theme } = useContext(ThemeContext);
 
   return (
     <section
       className="Hero"
       id="Home"
-      style={{ backgroundImage: `url(${heroImg})` }}
+      style={{
+        backgroundImage: `url(${
+          theme === 'dark' ? heroImageDark : heroImageLight
+        })`,
+      }}
     >
       <div className="container">
         <div className="Hero__content">
@@ -20,7 +27,6 @@ function Hero() {
               <span className="Hero__content__title--underline">
                 {header.titleAccent}
               </span>
-              .
               <br />
               {header.subTitle}{' '}
               <span className="Hero__content__title--accent">

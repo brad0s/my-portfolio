@@ -72,6 +72,9 @@
       overflow: hidden;
       transition: color 1s;
       padding: 0.5rem;
+      // background: var(--theme-background);
+      box-shadow: 10px 10px 20px var(--theme-box-shadow-bg-darker),
+        -10px -10px 20px var(--theme-box-shadow-bg-lighter);
       @include breakpoint('mobile') {
         padding: 0.5rem 1rem;
         @include breakpoint('tablet') {

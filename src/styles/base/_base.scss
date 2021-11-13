@@ -4,6 +4,10 @@
   box-sizing: inherit;
 }
 
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;

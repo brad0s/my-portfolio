@@ -24,3 +24,11 @@
     font-size: 0.875rem;
   }
 }
+
+:root[data-theme='light'] {
+  .Footer {
+    &__copyright {
+      font-weight: 400;
+    }
+  }
+}

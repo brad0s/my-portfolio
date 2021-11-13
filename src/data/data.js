@@ -26,14 +26,14 @@ export const navData = [
 export const headData = {
   title: `Braden Wright | Front end Developer`,
   lang: `en`,
-  description: `I'm Braden Wright. I am a front end developer. Welcome to my website!`,
+  description: `I'm Braden Wright. I am a front end developer. Welcome to my portfolio website!`,
 };
 
 export const heroData = {
   header: {
     title: `Hi, I'm `,
     titleAccent: `Braden Wright`,
-    subTitle: `I'm a `,
+    subTitle: `and I'm a `,
     subTitleAccent: `front end developer`,
   },
   cta: `Know more!`,
@@ -44,11 +44,11 @@ export const aboutData = {
   bio: [
     {
       id: nanoid(),
-      paragraph: `I am a front end developer that loves making beautiful user interfaces. I received my B.S. in Computer Science at Brigham Young University - Hawaii and I enjoy working with javascript and react.`,
+      paragraph: `Front end developing and making aesthetic, functional user interfaces is my passion. I received my B.S. in Computer Science at Brigham Young University - Hawaii and I enjoy working with javascript and react.`,
     },
     {
       id: nanoid(),
-      paragraph: `I love learning and pushing myself to do things that are challenging. I've continued my journey as a developer and share some of my thoughts and experiences on my blog.`,
+      paragraph: `I love learning and challenging myself and look forward to continuing my journey as a developer - you can read some of my thoughts and experiences on my blog.`,
     },
     {
       id: nanoid(),

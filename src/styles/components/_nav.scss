@@ -18,7 +18,7 @@
   &--scroll {
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    background: rgba(0, 0, 0, 0.4);
+    background: var(--theme-nav-background);
     transition: all 200ms ease-in-out;
   }
 
@@ -26,6 +26,10 @@
     &__logo {
       width: 30px;
       height: 30px;
+      @include breakpoint('sm-desktop') {
+        width: 40px;
+        height: 40px;
+      }
     }
   }
 
@@ -135,6 +139,47 @@
           }
         }
       }
+      .Theme-switch {
+        padding: 0.5rem;
+        position: relative;
+        &__checkbox {
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          opacity: 0;
+          margin: 0;
+          position: absolute;
+          &:checked + label:after {
+            left: calc(100% + 3px);
+            transform: translate(-100%, -25%);
+          }
+        }
+        &__switch {
+          display: flex;
+          width: 3.75rem;
+          height: 1.25rem;
+          background-color: var(--theme-surface);
+          border-radius: 0.775rem;
+          position: relative;
+          cursor: pointer;
+          border: 2px solid var(--theme-gray-200);
+          // transition: 0.5s;
+          &::after {
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: -3px;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 100%;
+            transition: 0.5s;
+            background-repeat: no-repeat;
+            background-position: center;
+            transform: translate(0, -25%);
+          }
+        }
+      }
     }
     &--expanded {
       max-height: 200px;
@@ -143,6 +188,24 @@
       .Nav__navbar__list {
         flex-direction: column;
       }
+    }
+  }
+}
+
+:root[data-theme='dark'] {
+  .Theme-switch__switch {
+    &:after {
+      background-image: url('/images/dark-mode.svg');
+      background-color: var(--theme-secondary);
+    }
+  }
+}
+
+:root[data-theme='light'] {
+  .Theme-switch__switch {
+    &:after {
+      background-image: url('/images/light-mode.svg');
+      background-color: var(--theme-primary);
     }
   }
 }

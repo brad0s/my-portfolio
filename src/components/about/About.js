@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Fade } from 'react-reveal';
-import profile from '../../images/profile-circle.svg';
+import profileDark from '../../images/profile-circle.svg';
+import profileLight from '../../images/profile-circle-light.svg';
 import { aboutData } from '../../data/data';
+import { ThemeContext } from '../../context/ThemeContext';
 
 function About() {
   const { title, bio, resume, blog } = aboutData;
+  const { theme } = useContext(ThemeContext);
   return (
     <section className="About" id="About">
       <div className="container">
@@ -13,7 +16,7 @@ function About() {
             <h2 className="About__content__title">{title}</h2>
             <img
               className="About__content__pic"
-              src={profile}
+              src={theme === 'dark' ? profileDark : profileLight}
               alt="Personal Avatar"
             />
           </Fade>

@@ -7,6 +7,16 @@ $--theme-on-primary: --theme-on-primary;
 $--theme-on-secondary: --theme-on-secondary;
 $--theme-on-surface: --theme-on-surface;
 
+$--theme-nav-background: --theme-nav-background;
+
+$--theme-gradient-from: --theme-gradient-from;
+$--theme-gradient-to: --theme-gradient-to;
+
+$--theme-box-shadow-bg-darker: --theme-box-shadow-bg-darker;
+$--theme-box-shadow-bg-lighter: --theme-box-shadow-bg-lighter;
+$--theme-box-shadow-surface-darker: --theme-box-shadow-surface-darker;
+$--theme-box-shadow-surface-lighter: --theme-box-shadow-surface-lighter;
+
 $--theme-gray-100: --theme-gray-100;
 $--theme-gray-200: --theme-gray-200;
 $--theme-gray-300: --theme-gray-300;
@@ -21,6 +31,13 @@ $theme-map-dark: (
   $--theme-on-primary: #201d1f,
   $--theme-on-secondary: #121212,
   $--theme-on-surface: #f5f1f1,
+  $--theme-gradient-from: lighten(#bb86fc, 20%),
+  $--theme-gradient-to: darken(#bb86fc, 15%),
+  $--theme-nav-background: rgba(0, 0, 0, 0.4),
+  $--theme-box-shadow-bg-darker: darken(#1b1919, 10%),
+  $--theme-box-shadow-bg-lighter: lighten(#1b1919, 7.5%),
+  $--theme-box-shadow-surface-darker: darken(#2f2b2b, 10%),
+  $--theme-box-shadow-surface-lighter: lighten(#2f2b2b, 7.5%),
   $--theme-gray-100: rgba(255, 255, 255, 0.9),
   $--theme-gray-200: rgba(255, 255, 255, 0.7),
   $--theme-gray-300: rgba(255, 255, 255, 0.4),
@@ -36,6 +53,13 @@ $theme-map-light: (
   $--theme-on-primary: #fff,
   $--theme-on-secondary: #fff,
   $--theme-on-surface: #000,
+  $--theme-gradient-from: rgba(135, 36, 255, 0.8),
+  $--theme-gradient-to: darken(#03dac5, 20%),
+  $--theme-nav-background: rgba(225, 225, 225, 0.5),
+  $--theme-box-shadow-bg-darker: darken(#fafafa, 10%),
+  $--theme-box-shadow-bg-lighter: lighten(#fafafa, 10%),
+  $--theme-box-shadow-surface-darker: darken(#fff, 10%),
+  $--theme-box-shadow-surface-lighter: lighten(#fff, 10%),
   $--theme-gray-100: #1c1c1c,
   $--theme-gray-200: #585757,
   $--theme-gray-300: #969696,

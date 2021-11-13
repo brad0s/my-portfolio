@@ -79,6 +79,8 @@
       }
       &__link {
         @include button();
+        box-shadow: 6px 6px 12px var($--theme-box-shadow-surface-darker),
+          -6px -6px 12px var($--theme-box-shadow-surface-lighter);
         font-weight: 500;
         margin: 0 0 1rem;
         font-size: 1.25rem;

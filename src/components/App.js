@@ -7,18 +7,21 @@ import Skills from './skills/Skills';
 import Education from './education/Education';
 import Footer from './footer/Footer';
 import Nav from './nav/Nav';
+import { ThemeContextProvider } from '../context/ThemeContext';
 
 function App() {
   return (
     <>
-      <Nav />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Experience />
-      <Education />
-      <Footer />
+      <ThemeContextProvider>
+        <Nav />
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Experience />
+        <Education />
+        <Footer />
+      </ThemeContextProvider>
     </>
   );
 }

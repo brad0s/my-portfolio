@@ -35,7 +35,9 @@
       flex-direction: column;
       row-gap: 1rem;
       &__link {
-        @include button;
+        @include button();
+        box-shadow: 6px 6px 12px var($--theme-box-shadow-bg-darker),
+          -6px -6px 12px var($--theme-box-shadow-bg-lighter);
         background-color: var(--theme-primary);
         color: var(--theme-on-secondary);
         border-color: var(--theme-primary);

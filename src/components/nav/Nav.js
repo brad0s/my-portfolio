@@ -1,19 +1,47 @@
-import React, { useState, useEffect } from 'react';
-import company from '../../images/bw-logo-white.svg';
-
+import React, { useState, useEffect, useContext } from 'react';
+import companyDark from '../../images/bw-logo-white.svg';
+import companyLight from '../../images/bw-logo.svg';
+import { ThemeContext } from '../../context/ThemeContext';
 import { navData } from '../../data/data';
+
+const ThemeToggle = ({ toggleTheme, theme }) => {
+  return (
+    <div className="Theme-switch">
+      <input
+        type="checkbox"
+        id="switch"
+        name="switch"
+        className="Theme-switch__checkbox"
+        onChange={() => toggleTheme()}
+      />
+
+      <label
+        htmlFor="switch"
+        className={
+          theme === 'dark'
+            ? 'Theme-switch__switch'
+            : 'Theme-switch__switch Theme-switch__switch--light'
+        }
+      ></label>
+    </div>
+  );
+};
 
 function Nav() {
   const [expanded, setExpanded] = useState(false);
   const [active, setActive] = useState();
   const [scrollNav, setscrollNav] = useState(false);
-  // const [sections] = useState(navData);
+  const { theme, setTheme, nextTheme } = useContext(ThemeContext);
   const [NAVBAR_OFFSET] = useState(50);
 
   const handleOnBlur = (e) => {
     if (e.relatedTarget != null && !e.relatedTarget.className.includes('Nav')) {
       setExpanded(false);
     }
+  };
+
+  const toggleTheme = () => {
+    setTheme(nextTheme);
   };
 
   useEffect(() => {
@@ -41,7 +69,11 @@ function Nav() {
   return (
     <nav className={scrollNav ? 'Nav Nav--scroll' : 'Nav'}>
       <a href="#Home" className="Nav__brand" aria-label="Go to Home section">
-        <img className="Nav__brand__logo" src={company} alt="Personal logo" />
+        <img
+          className="Nav__brand__logo"
+          src={theme === 'dark' ? companyDark : companyLight}
+          alt="Personal logo"
+        />
       </a>
       <button
         className="Nav__toggler"
@@ -93,6 +125,9 @@ function Nav() {
               </li>
             );
           })}
+          <li className="Nav__navbar__list__item">
+            <ThemeToggle toggleTheme={toggleTheme} theme={theme} />
+          </li>
         </ul>
       </div>
     </nav>
