@@ -50,7 +50,7 @@
 }
 
 // button
-@mixin button() {
+@mixin button($hover-color) {
   font-weight: 400;
   line-height: 1.5;
   // color: #212529;
@@ -66,6 +66,10 @@
   // background: #e0e0e0;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  &:hover {
+    background-color: $hover-color;
+    // border-color: $hover-color;
+  }
 }
 
 @mixin background-opacity($color, $opacity: 0.3) {

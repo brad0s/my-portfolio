@@ -58,7 +58,7 @@
     }
     &__button {
       position: relative;
-      @include button();
+      @include button(transparent);
       border-color: var(--theme-primary);
       color: var(--theme-primary);
       font-weight: 800;

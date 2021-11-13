@@ -78,7 +78,7 @@
         column-gap: 1rem;
       }
       &__link {
-        @include button();
+        @include button(var(--theme-primary-hover));
         box-shadow: 6px 6px 12px var($--theme-box-shadow-surface-darker),
           -6px -6px 12px var($--theme-box-shadow-surface-lighter);
         font-weight: 500;
@@ -96,6 +96,10 @@
         &--default {
           border-color: var(--theme-on-surface);
           color: var(--theme-on-surface);
+          &:hover {
+            // border-color: var(--theme-gray-400);
+            background-color: var(--theme-gray-400);
+          }
         }
       }
     }

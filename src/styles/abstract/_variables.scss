@@ -1,5 +1,6 @@
 // css variables
 $--theme-primary: --theme-primary;
+$--theme-primary-hover: --theme-primary-hover;
 $--theme-secondary: --theme-secondary;
 $--theme-surface: --theme-surface;
 $--theme-background: --theme-background;
@@ -25,13 +26,14 @@ $--theme-gray-400: --theme-gray-400;
 // default theme
 $theme-map-dark: (
   $--theme-primary: #bb86fc,
+  $--theme-primary-hover: lighten(#bb86fc, 10%),
   $--theme-secondary: #03dac5,
   $--theme-surface: #2f2b2b,
   $--theme-background: #1b1919,
   $--theme-on-primary: #201d1f,
   $--theme-on-secondary: #121212,
   $--theme-on-surface: #f5f1f1,
-  $--theme-gradient-from: lighten(#bb86fc, 20%),
+  $--theme-gradient-from: lighten(#bb86fc, 10%),
   $--theme-gradient-to: darken(#bb86fc, 15%),
   $--theme-nav-background: rgba(0, 0, 0, 0.4),
   $--theme-box-shadow-bg-darker: darken(#1b1919, 10%),
@@ -47,6 +49,7 @@ $theme-map-dark: (
 // override default theme
 $theme-map-light: (
   $--theme-primary: darken(#bb86fc, 20%),
+  $--theme-primary-hover: darken(#bb86fc, 35%),
   $--theme-secondary: darken(#03dac5, 20%),
   $--theme-surface: #fff,
   $--theme-background: #fafafa,
