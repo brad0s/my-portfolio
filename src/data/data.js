@@ -103,14 +103,14 @@ export const experienceData = [
     id: nanoid(),
     company: `BYU-Hawaii`,
     location: `Laie, HI`,
-    jobTitle: `Developer`,
+    jobTitle: `Software Developer`,
     dates: { start: `Feb 2020`, end: `Feb 2021` },
   },
   {
     id: nanoid(),
     company: `Martindale-Nolo`,
     location: `Pleasanton, CA`,
-    jobTitle: `Front End Developer Intern`,
+    jobTitle: `Front End Developer Internship`,
     dates: { start: `Oct 2019`, end: `Feb 2020` },
   },
   {
@@ -124,7 +124,7 @@ export const experienceData = [
     id: nanoid(),
     company: `Varian Medical Systems`,
     location: `Palo Alto, CA`,
-    jobTitle: `Software Developer Intern`,
+    jobTitle: `Software Developer Internship`,
     dates: { start: `Jun 2017`, end: `Aug 2017` },
   },
 ];
