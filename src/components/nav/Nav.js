@@ -41,6 +41,7 @@ function Nav() {
   };
 
   const toggleTheme = () => {
+    window.sessionStorage.setItem('bradenTheme', nextTheme);
     setTheme(nextTheme);
   };
 
