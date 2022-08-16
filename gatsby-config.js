@@ -1,7 +1,10 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://www.yourdomain.tld',
-    title: 'portfolio',
+    siteUrl: 'https://bradenwright.gatsbyjs.io/',
+    title: 'Braden Wright portfolio',
+    description:
+      'My name is Braden Wright and I am a developer. Look through my portfolio and see what I have done!',
+    image: '/src/images/site-screenshot.png',
   },
   plugins: [
     'gatsby-plugin-sass',
