@@ -4,7 +4,7 @@ module.exports = {
     title: 'Braden Wright portfolio',
     description:
       'My name is Braden Wright and I am a developer. Look through my portfolio and see what I have done!',
-    image: '/src/images/site-screenshot.png',
+    image: '/images/site-screenshot.png',
   },
   plugins: [
     'gatsby-plugin-sass',

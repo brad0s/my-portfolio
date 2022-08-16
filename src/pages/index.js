@@ -7,15 +7,16 @@ import { ThemeContextProvider } from '../context/ThemeContext';
 
 // markup
 const IndexPage = () => {
-  const { title, lang, description } = headData;
+  const { title, lang, description, image } = headData;
   return (
     <>
       <ThemeContextProvider>
         <Helmet>
-          <meta charSet="utf-8" />
+          <meta charSet='utf-8' />
           <title>{title}</title>
           <html lang={lang} />
-          <meta name="description" content={description} />
+          <meta name='description' content={description} />
+          <meta name='image' content={image} />
         </Helmet>
         <App />
       </ThemeContextProvider>
