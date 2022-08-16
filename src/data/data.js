@@ -101,6 +101,13 @@ export const projectsData = [
 export const experienceData = [
   {
     id: nanoid(),
+    company: `Floodlight Design`,
+    location: `Remote`,
+    jobTitle: `Frontend Developer`,
+    dates: { start: `Nov 2021`, end: `current` },
+  },
+  {
+    id: nanoid(),
     company: `BYU-Hawaii`,
     location: `Laie, HI`,
     jobTitle: `Software Developer`,
@@ -130,17 +137,17 @@ export const experienceData = [
 ];
 
 export const educationData = [
-  // {
-  //   id: nanoid(),
-  //   name: `BYU-Hawaii`,
-  //   location: `Laie, HI`,
-  //   degree: `B.S.`,
-  //   major: `Computer Science`,
-  //   date: {
-  //     start: `Aug 2016`,
-  //     end: `Jun 2019`,
-  //   },
-  // },
+  {
+    id: nanoid(),
+    name: `BYU-Hawaii`,
+    location: `Laie, HI`,
+    degree: `B.S.`,
+    major: `Computer Science`,
+    date: {
+      start: `Aug 2016`,
+      end: `Jun 2019`,
+    },
+  },
   // {
   //   id: nanoid(),
   //   name: `Utah Valley Univeristy`,
