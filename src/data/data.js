@@ -140,7 +140,7 @@ export const experienceData = [
 export const educationData = [
   {
     id: nanoid(),
-    name: `BYU`,
+    name: `BYU-Hawaii`,
     location: `Laie, HI`,
     degree: `B.S.`,
     major: `Computer Science`,
