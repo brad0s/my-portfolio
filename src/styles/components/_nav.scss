@@ -16,8 +16,8 @@
     margin-bottom: -51px;
   }
   &--scroll {
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
+    // backdrop-filter: blur(4px);
+    // -webkit-backdrop-filter: blur(4px);
     background: var(--theme-nav-background);
     transition: all 200ms ease-in-out;
   }
