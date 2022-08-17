@@ -30,7 +30,7 @@
           &:hover {
             transform: rotate(-5deg) scale(1.05);
             svg {
-              fill: #f35b04;
+              transform: scale(1.2) translateY(-10px);
             }
           }
         }
@@ -61,7 +61,7 @@
             transform: rotate(5deg);
             // box-shadow: -6px 5px 14px 0px #000;
             svg {
-              transform: translateX(10px) rotate(10deg);
+              transform: translateX(10px) rotate(10deg) scale(1.1);
             }
           }
         }
