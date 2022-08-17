@@ -53,7 +53,6 @@
 @mixin button($hover-color) {
   font-weight: 400;
   line-height: 1.5;
-  // color: #212529;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
@@ -63,12 +62,10 @@
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   border-radius: 0.25rem;
-  // background: #e0e0e0;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   &:hover {
     background-color: $hover-color;
-    // border-color: $hover-color;
   }
 }
 
@@ -80,4 +77,36 @@
 @mixin section($background-color, $color) {
   background-color: $background-color;
   color: $color;
+}
+
+@mixin animate($duration, $easing, $delay, $iteration, $direction, $fill, $state, $name) {
+  animation: $duration $easing $delay $iteration $direction $fill $state $name;
+}
+
+// animations
+@keyframes jump {
+  0% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+
+  1% {
+    transform: translateY(-50%);
+  }
+
+  30% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-35%);
+  }
+
+  65% {
+    transform: translate(0);
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
