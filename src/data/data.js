@@ -36,6 +36,7 @@ export const heroData = {
     titleAccent: `Braden Wright`,
     subTitle: `and I'm a `,
     subTitleAccent: `front end developer`,
+    typewriter: ['skater', 'surfer', 'front end developer'],
   },
   cta: `Know more!`,
 };

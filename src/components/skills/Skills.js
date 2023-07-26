@@ -34,7 +34,7 @@ function Skills() {
             <Skill icon={<Di.DiLess />} name='Less' />
           </Slide>
           <Slide left>
-            <Skill icon={<Di.DiMongodb />} name='MongoDB' />
+            <Skill icon={<Di.DiMysql />} name='MySQL' />
           </Slide>
           <Slide left>
             <Skill icon={<Di.DiCss3 />} name='CSS' />
@@ -46,7 +46,7 @@ function Skills() {
             <Skill icon={<Di.DiGit />} name='Git' />
           </Slide>
           <Slide left>
-            <Skill icon={<Di.DiBootstrap />} name='Bootstrap' />
+            <Skill icon={<Di.DiWordpress />} name='WordPress' />
           </Slide>
           <Slide left>
             <Skill icon={<Di.DiPhp />} name='PHP' />

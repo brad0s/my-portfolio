@@ -4,6 +4,20 @@
   background-color: var(--theme-background);
   height: 110vh;
   // background-image: url('/images/topography.svg');
+
+  .img-bg {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transform: scale(1.25);
+    transition: all 1s ease;
+
+    &.show {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
   > .container {
     height: 100%;
   }
@@ -21,6 +35,7 @@
 
     &__title {
       font-size: 2rem;
+      line-height: 1.5;
       @include breakpoint('sm-desktop') {
         font-size: 3.5rem;
       }
@@ -36,7 +51,7 @@
           position: absolute;
           left: 0;
           // right: 0%;
-          bottom: 0;
+          bottom: 6px;
           height: 4px;
           background-color: var(--theme-secondary);
           z-index: -1;
@@ -54,6 +69,23 @@
       &--accent {
         color: var(--theme-primary);
         font-weight: 900;
+        position: relative;
+        display: inline-block;
+
+        &:before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background: var(--theme-primary);
+          animation-duration: 1.25s;
+          animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+          animation-delay: 1500ms;
+          animation-iteration-count: initial;
+          animation-direction: normal;
+          animation-fill-mode: forwards;
+          animation-name: revealLtr;
+          transform-origin: right;
+        }
       }
     }
     &__button {
@@ -121,5 +153,14 @@
   }
   to {
     width: 100%;
+  }
+}
+
+@keyframes revealLtr {
+  from {
+    transform: scaleX(1);
+  }
+  to {
+    transform: scaleX(0);
   }
 }
