@@ -3,6 +3,7 @@
   color: var(--theme-on-surface);
   background-color: var(--theme-background);
   height: 110vh;
+  overflow: hidden;
   // background-image: url('/images/topography.svg');
 
   .img-bg {
@@ -36,6 +37,7 @@
     &__title {
       font-size: 2rem;
       line-height: 1.5;
+      // overflow: hidden;
       @include breakpoint('sm-desktop') {
         font-size: 3.5rem;
       }
