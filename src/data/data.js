@@ -70,7 +70,7 @@ export const projectsData = [
     tags: [`react`, `scss`, `api`, `js`],
     image: { filename: `soccer.png`, alt: 'Soccer states website screenshot' },
     repo: `https://github.com/brad0s/epl-webapp`,
-    url: `https://soccer-stats-lander.herokuapp.com/`,
+    url: `https://fabulous-dusk-36fd2a.netlify.app/`,
   },
   {
     id: nanoid(),
