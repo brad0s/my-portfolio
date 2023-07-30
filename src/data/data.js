@@ -66,7 +66,7 @@ export const projectsData = [
     id: nanoid(),
     title: `API-connected.`,
     subtitle: `Data driven.`,
-    description: `I love the premier league so I used a football data api to create this site. This site demonstrates my skills for creating a website using react, styling with scss and working with apis.`,
+    description: `I have a profound passion for the Premier League, which inspired me to design this website utilizing a football data API. Showcasing my expertise in React development, SCSS styling, and API integration, this platform reflects my skills in web development.`,
     tags: [`react`, `scss`, `api`, `js`],
     image: { filename: `soccer.png`, alt: 'Soccer states website screenshot' },
     repo: `https://github.com/brad0s/epl-webapp`,
@@ -76,7 +76,7 @@ export const projectsData = [
     id: nanoid(),
     title: `Responsive Webpages.`,
     subtitle: `Pixel-perfect design.`,
-    description: `While working at Martindale-Nolo, one of the projects I helped implement was a new LLC launch path. This was designed to have people use us to create their own LLCs. On this project, I worked with another front end developer to create the sites with html, less, and js. Our graphic designer handed us the templates and we turned their templates into pixel perfect, mobile first sites.`,
+    description: `While working at Martindale-Nolo, I actively contributed to a significant project involving the development of a new LLC launch path, aimed at facilitating users in creating their own LLCs. Collaborating with another front end developer, we transformed the graphic designer's templates into pixel-perfect, mobile-first websites using HTML, LESS, and JS technologies.`,
     tags: [`js`, `less`, `php`],
     image: {
       filename: `llc.png`,
@@ -87,9 +87,22 @@ export const projectsData = [
   },
   {
     id: nanoid(),
+    title: `Weather App.`,
+    subtitle: `Consuming APIs.`,
+    description: `A straightforward weather app providing real-time weather data for the user's current location, powered by WeatherAPI.com.`,
+    tags: [`react`, `scss`, `api`],
+    image: {
+      filename: `weather-app-image.jpg`,
+      alt: 'weather app screenshot',
+    },
+    repo: `https://github.com/brad0s/weather-app`,
+    url: `https://main--tangerine-sfogliatella-cd4401.netlify.app/`,
+  },
+  {
+    id: nanoid(),
     title: `Landing page.`,
     subtitle: `Mobile first design.`,
-    description: `Landing pages are always so elegant and I love how they look. I was inspired by Shopify to recreate their landing page using react, html, js and scss.`,
+    description: `I am captivated by the elegance of landing pages, and drawing inspiration from Shopify, I embarked on a project to recreate their stunning landing page using React, HTML, JS, and SCSS.`,
     tags: [`react`, `scss`],
     image: {
       filename: `skopify.png`,
@@ -105,7 +118,7 @@ export const experienceData = [
     id: nanoid(),
     company: `Floodlight Design`,
     location: `Remote`,
-    jobTitle: `Frontend Developer`,
+    jobTitle: `Front End Developer`,
     dates: { start: `Nov 2021`, end: `current` },
   },
   {
